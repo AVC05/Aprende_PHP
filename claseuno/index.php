@@ -6,7 +6,7 @@
 	   <h1>Bienvenido a mi primera clase php</h1>
       <?php
           /*COMENTARIOS*/
-          echo "Hola soy un script de PHP"; 
+          echo "Hola soy un script de PHP";
           //esto es un comentario de php de una sola linea
           /*
             esto es un comentario de varias lineas
@@ -45,14 +45,14 @@
            print("<br>");
            print("<h3>Referencia de Idioma</h3>");
            $mensaje_es="Hola";
-           $mensaje_en="Hello";
+           $mensaje_en="Hi!";
            $idioma = "es";
            $mensaje = "mensaje_" . $idioma;
            print $$mensaje;
 
            /*Ingles*/
            print("<h3>Referencia de Idioma Ingles</h3>");
-          
+
            $idioma = "en";
            $mensaje = "mensaje_" . $idioma;
            print $$mensaje; //como si devolviera una cadena
@@ -62,7 +62,7 @@
            print("<h3>Constantes</h3>");
            define ("CONSTANTE","hola constante");
            print CONSTANTE;
-           
+
            print("<br>");
            define ("PI",3.141516);
 
@@ -110,11 +110,11 @@
            		break;
 
            	case 'HTML':
-           		$tipo ="Documento de Lenguaje de Marcado";	
+           		$tipo ="Documento de Lenguaje de Marcado";
            		break;
-           	
+
            	case 'XLS':
-           		$tipo ="Documento de Microsoft Excel";	
+           		$tipo ="Documento de Microsoft Excel";
            		break;
 
            	default:
@@ -158,34 +158,34 @@
 
            //almacenar el count en una variable
            //$variable = count($lista);
-           /*for ($i=1; $i <=$variable ; $i++) { 
+           /*for ($i=1; $i <=$variable ; $i++) {
            	   print ("<li> Lista $i </li>");
            }
            print ("</ul>\n");
            */
 
-           for ($i=1; $i <=5 ; $i++) { 
+           for ($i=1; $i <=5 ; $i++) {
            	   print ("<li> Lista $i </li>");
            }
            print ("</ul>\n");
 
            /*TABLA DE MULTIPLICAR*/
 
-           for ($i=1; $i <=12 ; $i++) { 
+           for ($i=1; $i <=12 ; $i++) {
            	    $multiplicar = 5 * $i;
            	   print ("<li>  5 * $i  = $multiplicar </li>");
            }
            print ("</ul>\n");
 ///////////////////////////////////////
            print("Ejemplo 2 bucles for: Tabla");
-           for ($i=1; $i <=12 ; $i++) { 
+           for ($i=1; $i <=12 ; $i++) {
            	    echo "<h3> Tabla de $i </h3>";
 
-                for ($j=1; $j <=12 ; $j++) { 
+                for ($j=1; $j <=12 ; $j++) {
            	    echo "$i x $j  = " . ($i*$j) . "<br>";
            	   }
            }
-           
+
            print("<h3> Declarando Funciones </h3>");
 
            function suma($a,$b)
@@ -209,7 +209,7 @@
 
       //Cierre de PHP
            /*Cliente: id, Servidor:name*/
-      ?>    
+      ?>
       <p>Loren input dolor sit meet.
       He is amazing, beautiful, and bitch
       He <br> is...
@@ -226,7 +226,7 @@
              <p> Su nombre : <input type="text" id="nombre" name="p_nombre"></p>
              <p> Su edad : <input type="text" id="edad" name="p_edad" ></p>
              <p><input type="submit" value="Enviar" ></p>
-      	
+
       </form>
 
 
